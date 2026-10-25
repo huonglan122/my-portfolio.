@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Liên hệ Lumina Studio để nhận tư vấn và báo giá miễn phí. Mọi thông tin liên hệ trên trang là dữ liệu giả định.">
+  <title>Liên hệ - Lumina Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Lumina Studio - Trang chủ">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#f59e0b"></circle>
+          <path d="M16 6l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#0f172a"></path>
+        </svg>
+        <span>Lumina<span class="brand-accent">Studio</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Bật/tắt menu</span>
+      </button>
+      <nav id="primary-nav" class="site-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="services.html">Dịch vụ</a></li>
+          <li><a href="contact.html" class="nav-cta" aria-current="page">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Trang chủ</a> <span>/</span> <span>Liên hệ</span></p>
+        <h1>Liên hệ với chúng tôi</h1>
+        <p>Hãy chia sẻ ý tưởng của bạn. Chúng tôi sẽ phản hồi trong vòng 24 giờ (trong bối cảnh giả định).</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <div class="container contact-layout">
+        <div class="form-card reveal">
+          <h2 id="form-title">Gửi tin nhắn</h2>
+          <p>Điền thông tin bên dưới để nhận tư vấn miễn phí.</p>
+
+          <form id="contact-form" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ban@example.com" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" placeholder="0900 000 000" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="service">Dịch vụ quan tâm</label>
+                <select id="service" name="service">
+                  <option value="ui">Thiết kế giao diện UI/UX</option>
+                  <option value="web">Lập trình website</option>
+                  <option value="responsive">Responsive và tối ưu hiệu năng</option>
+                  <option value="other">Khác</option>
+                </select>
+              </div>
+            </div>
+
+            <fieldset class="fieldset">
+              <legend>Ngân sách dự kiến</legend>
+              <div class="radio-group">
+                <label for="budget-1"><input type="radio" id="budget-1" name="budget" value="low" checked> Dưới 10 triệu</label>
+                <label for="budget-2"><input type="radio" id="budget-2" name="budget" value="mid"> 10 - 25 triệu</label>
+                <label for="budget-3"><input type="radio" id="budget-3" name="budget" value="high"> Trên 25 triệu</label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="message">Nội dung</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hãy mô tả ngắn gọn về dự án của bạn..." required></textarea>
+            </div>
+
+            <div class="check-field">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">Tôi đồng ý để Lumina Studio liên hệ lại (biểu mẫu chỉ mang tính minh họa).</label>
+            </div>
+
+            <button type="submit" class="btn">Gửi tin nhắn</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="info-stack" aria-label="Thông tin liên hệ">
+          <div class="info-card reveal">
+            <div class="icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="M3 7l9 6 9-6"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>hello@lumina-studio.example</p>
+            </div>
+          </div>
+
+          <div class="info-card reveal">
+            <div class="icon-box is-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Điện thoại</h3>
+              <p>0900 000 000 (số giả định)</p>
+            </div>
+          </div>
+
+          <div class="info-card reveal">
+            <div class="icon-box is-mint">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"></path>
+                <circle cx="12" cy="10" r="2.5"></circle>
+              </svg>
+            </div>
+            <div>
+              <h3>Địa chỉ</h3>
+              <p>123 Đường Ví Dụ, Thành phố Mẫu (địa chỉ giả định)</p>
+            </div>
+          </div>
+
+          <div class="info-card reveal">
+            <div class="icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Giờ làm việc</h3>
+              <p>Thứ Hai - Thứ Sáu: 8:30 - 17:30</p>
+            </div>
+          </div>
+
+          <p class="notice reveal">Lưu ý: đây là website phục vụ bài tập. Biểu mẫu không gửi dữ liệu đến bất kỳ máy chủ nào.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="index.html" aria-label="Lumina Studio - Trang chủ">
+          <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="15" fill="#f59e0b"></circle>
+            <path d="M16 6l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#0f172a"></path>
+          </svg>
+          <span>Lumina<span class="brand-accent">Studio</span></span>
+        </a>
+        <p>Studio hư cấu được tạo ra cho bài tập môn Xây dựng ứng dụng Web. Mọi thông tin trên website đều là dữ liệu giả định.</p>
+      </div>
+      <div>
+        <h2>Điều hướng</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="services.html">Dịch vụ</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Liên hệ (minh họa)</h2>
+        <ul class="footer-contact">
+          <li>Email: hello@lumina-studio.example</li>
+          <li>Điện thoại: 0900 000 000</li>
+          <li>Địa chỉ: 123 Đường Ví Dụ, Thành phố Mẫu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Lumina Studio. Website minh họa phục vụ học tập.</p>
+    </div>
+  </footer>
+</body>
+</html>

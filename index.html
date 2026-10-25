@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lumina Studio - studio thiết kế web hư cấu dùng làm bài tập môn Xây dựng ứng dụng Web: giao diện đẹp, chuẩn W3C, responsive.">
+  <title>Lumina Studio - Thiết kế web tỏa sáng thương hiệu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Lumina Studio - Trang chủ">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#f59e0b"></circle>
+          <path d="M16 6l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#0f172a"></path>
+        </svg>
+        <span>Lumina<span class="brand-accent">Studio</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Bật/tắt menu</span>
+      </button>
+      <nav id="primary-nav" class="site-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Trang chủ</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="services.html">Dịch vụ</a></li>
+          <li><a href="contact.html" class="nav-cta">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container grid-2">
+        <div>
+          <span class="eyebrow">Studio thiết kế web sáng tạo</span>
+          <h1 id="hero-title">Thiết kế web giúp thương hiệu của bạn <span class="highlight">tỏa sáng</span></h1>
+          <p class="lead">Chúng tôi biến ý tưởng thành những website đẹp mắt, tải nhanh và hiển thị hoàn hảo trên mọi thiết bị.</p>
+          <div class="btn-group">
+            <a class="btn btn-accent" href="contact.html">Nhận tư vấn miễn phí</a>
+            <a class="btn btn-outline" href="services.html">Xem dịch vụ</a>
+          </div>
+          <p class="hero-trust">Được hơn 120 khách hàng (giả định) tin tưởng</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mockup">
+            <div class="mockup-bar">
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-body">
+              <div class="mk-banner"></div>
+              <div class="mk-line"></div>
+              <div class="mk-line w-70"></div>
+              <div class="mk-line w-45"></div>
+              <div class="mk-cards">
+                <div class="mk-card"></div>
+                <div class="mk-card"></div>
+                <div class="mk-card"></div>
+              </div>
+            </div>
+          </div>
+          <div class="float-badge badge-top"><span class="badge-dot"></span> Chuẩn W3C</div>
+          <div class="float-badge badge-bottom">&#9733; Responsive 100%</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container stats-wrap">
+      <ul class="stats reveal">
+        <li class="stat"><span class="stat-number">120+</span><span class="stat-label">Dự án hoàn thành</span></li>
+        <li class="stat"><span class="stat-number">98%</span><span class="stat-label">Khách hàng hài lòng</span></li>
+        <li class="stat"><span class="stat-number">7</span><span class="stat-label">Năm kinh nghiệm</span></li>
+        <li class="stat"><span class="stat-number">24/7</span><span class="stat-label">Hỗ trợ kỹ thuật</span></li>
+      </ul>
+    </div>
+
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Dịch vụ</span>
+          <h2 id="services-title">Mọi thứ bạn cần cho một website chuyên nghiệp</h2>
+          <p>Từ thiết kế giao diện đến lập trình và tối ưu hiển thị, chúng tôi đồng hành trọn vẹn cùng dự án của bạn.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+                <path d="M8 20h8M12 16v4"></path>
+              </svg>
+            </div>
+            <h3>Thiết kế giao diện</h3>
+            <p>Bố cục hiện đại, bảng màu hài hòa và trải nghiệm người dùng được chăm chút từng chi tiết.</p>
+            <a class="card-link" href="services.html">Tìm hiểu thêm &rarr;</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon-box is-amber">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"></path>
+              </svg>
+            </div>
+            <h3>Lập trình website</h3>
+            <p>Mã nguồn sạch, đúng chuẩn HTML5 và CSS3, dễ bảo trì và tương thích với mọi trình duyệt.</p>
+            <a class="card-link" href="services.html">Tìm hiểu thêm &rarr;</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon-box is-mint">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="7" y="2" width="10" height="20" rx="2"></rect>
+                <path d="M11 18h2"></path>
+              </svg>
+            </div>
+            <h3>Responsive đa thiết bị</h3>
+            <p>Giao diện tự co giãn mượt mà trên điện thoại, máy tính bảng và máy tính để bàn.</p>
+            <a class="card-link" href="services.html">Tìm hiểu thêm &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Quy trình</span>
+          <h2 id="process-title">4 bước để có website mơ ước</h2>
+          <p>Quy trình rõ ràng, minh bạch giúp bạn luôn nắm được tiến độ dự án.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <h3>Lắng nghe</h3>
+            <p>Tìm hiểu mục tiêu, khách hàng mục tiêu và phong cách thương hiệu của bạn.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Thiết kế</h3>
+            <p>Phác thảo bố cục và giao diện mẫu để bạn xem trước và góp ý.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Phát triển</h3>
+            <p>Lập trình, kiểm thử trên nhiều thiết bị và kiểm tra chuẩn W3C.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Bàn giao</h3>
+            <p>Đưa website lên mạng, hướng dẫn sử dụng và hỗ trợ sau bàn giao.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Dự án tiêu biểu</span>
+          <h2 id="projects-title">Một vài sản phẩm chúng tôi tự hào</h2>
+          <p>Các dự án dưới đây đều là ví dụ giả định phục vụ mục đích học tập.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="project reveal">
+            <div class="project-thumb t1" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="tag">Thương mại điện tử</span>
+              <h3>Cửa hàng Hương Việt</h3>
+              <p>Website bán hàng thực phẩm sạch với giỏ hàng nhanh và giao diện thân thiện.</p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-thumb t2" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="tag">Ẩm thực</span>
+              <h3>Nhà hàng Sen Vàng</h3>
+              <p>Trang giới thiệu thực đơn, đặt bàn trực tuyến và thư viện hình ảnh sống động.</p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-thumb t3" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="tag">Giáo dục</span>
+              <h3>Học viện Ánh Dương</h3>
+              <p>Cổng thông tin khóa học với lịch khai giảng và biểu mẫu đăng ký trực tuyến.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Khách hàng nói gì</span>
+          <h2 id="reviews-title">Những lời nhận xét chân thành</h2>
+          <p>Các đánh giá dưới đây là nội dung hư cấu để minh họa bố cục trang.</p>
+        </div>
+
+        <div class="grid-3">
+          <figure class="quote reveal">
+            <div>
+              <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>
+                <p>Website mới nhìn chuyên nghiệp hơn hẳn và tải rất nhanh. Lượng khách truy cập tăng rõ rệt.</p>
+              </blockquote>
+            </div>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">TH</span>
+              <span>
+                <span class="quote-name">Trần Hạnh</span>
+                <span class="quote-role">Chủ cửa hàng (nhân vật giả định)</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal">
+            <div>
+              <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>
+                <p>Đội ngũ làm việc tận tâm, luôn lắng nghe và hoàn thành đúng hẹn. Rất đáng tin cậy.</p>
+              </blockquote>
+            </div>
+            <figcaption>
+              <span class="avatar is-amber" aria-hidden="true">LM</span>
+              <span>
+                <span class="quote-name">Lê Minh</span>
+                <span class="quote-role">Quản lý nhà hàng (nhân vật giả định)</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal">
+            <div>
+              <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>
+                <p>Giao diện đẹp trên cả điện thoại lẫn máy tính. Học viên đăng ký khóa học dễ dàng hơn nhiều.</p>
+              </blockquote>
+            </div>
+            <figcaption>
+              <span class="avatar is-mint" aria-hidden="true">PA</span>
+              <span>
+                <span class="quote-name">Phạm An</span>
+                <span class="quote-role">Giám đốc đào tạo (nhân vật giả định)</span>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2 id="cta-title">Sẵn sàng bắt đầu dự án của bạn?</h2>
+          <p>Hãy chia sẻ ý tưởng, chúng tôi sẽ cùng bạn biến nó thành một website ấn tượng.</p>
+          <div class="btn-group">
+            <a class="btn btn-accent" href="contact.html">Liên hệ ngay</a>
+            <a class="btn btn-outline" href="about.html">Về chúng tôi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="index.html" aria-label="Lumina Studio - Trang chủ">
+          <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="15" fill="#f59e0b"></circle>
+            <path d="M16 6l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#0f172a"></path>
+          </svg>
+          <span>Lumina<span class="brand-accent">Studio</span></span>
+        </a>
+        <p>Studio hư cấu được tạo ra cho bài tập môn Xây dựng ứng dụng Web. Mọi thông tin trên website đều là dữ liệu giả định.</p>
+      </div>
+      <div>
+        <h2>Điều hướng</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="services.html">Dịch vụ</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Liên hệ (minh họa)</h2>
+        <ul class="footer-contact">
+          <li>Email: hello@lumina-studio.example</li>
+          <li>Điện thoại: 0900 000 000</li>
+          <li>Địa chỉ: 123 Đường Ví Dụ, Thành phố Mẫu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Lumina Studio. Website minh họa phục vụ học tập.</p>
+    </div>
+  </footer>
+</body>
+</html>
